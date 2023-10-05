@@ -17,7 +17,7 @@
 ### Create employee table
 ## QUERY:
 ```
-CREATE TABLE empl
+CREATE TABLE employ5
 (
 empid NUMBER,
 empname VARCHAR2(10),
@@ -27,12 +27,12 @@ salary NUMBER
 ```
 ## OUTPUT:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/3747e23a-3b4c-4c18-9101-9ac0f7873dfe)
+![S1-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/0cd725de-2a02-4724-b4b1-0fc21820d3d1)
 
 ### Create salary_log table
 ## QUERY:
 ```
-CREATE TABLE wages_log
+CREATE TABLE wages1_log1
 (
 log_id NUMBER GENERATED ALWAYS AS IDENTITY,
 empid NUMBER,
@@ -44,14 +44,13 @@ update_date DATE
 ```
 ## OUTPUT:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/f389398e-9fc0-4169-96e8-e2574b8db4d6)
-
+![S2-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/c74502c1-063a-4171-b286-9edd7df2dd25)
 
 ### PLSQL Trigger code:
 ## QUERY:
 ```
-CREATE OR REPLACE TRIGGER logging_sal_update
-BEFORE UPDATE ON empl
+CREATE OR REPLACE TRIGGER logging_sal_update2
+BEFORE UPDATE ON employ5
 FOR EACH ROW
 BEGIN
 IF :OLD.salary != :NEW.salary THEN
@@ -63,20 +62,17 @@ END;
 ```
 ### Output:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/b71f1b4c-3f98-451f-9a7c-611c86aa6a3f)
+![S3-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/99ab0537-92d9-473d-9d52-5e6e6c1d7521)
 
 ### Inserting data into the employed table:
 ## QUERY:
 ```
-insert into empl values(1,'Divya','IT',100000);
-insert into empl values(2,'Sujithra','SALES',50000);
-insert into empl values(3,'Pavithra','HR',110000);
-insert into empl values(4,'Saranya','SALES',50000);
-insert into empl values(5,'Dharshini','IT',100000);
+insert into employ5 values(1,'Miru','IT',100000);
+insert into employ5 values(2,'Div','SALES',40000);
+insert into employ5 values(3,'Rev','HR',800000);
+insert into employ5 values(4,'Den','SALES',30000);
+insert into employ5 values(5,'Niva','IT',90000);
 ```
-### OUTPUT:
-
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/20a43da4-d975-496e-b33c-1f337144596d)
 
 ### Update the salary of an employed:
 ## QUERY:
@@ -87,11 +83,12 @@ where empid=3;
 ```
 ## OUTPUT:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/29052f2f-e82f-43d2-b297-479c1b600b54)
+![S4-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/71806e95-5586-4a4c-8b24-78fdaf35743e)
+
 ## Display the employee table:
 ## QUERY:
 ```
-select * from empl;
+select * from employ;
 ```
 ## OUTPUT:
 
@@ -105,7 +102,7 @@ select * from wages_log;
 
 ## OUTPUT:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/5e56b005-9d1b-419e-b5c3-2a1218ceab49)
+![S5-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/496f50c8-b434-4f5e-9b7b-ecc4d6913009)
 
 ### Result:
 The program has been implemented successfully.
