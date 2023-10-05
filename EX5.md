@@ -62,7 +62,7 @@ END;
 ```
 ### Output:
 
-![S3-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/99ab0537-92d9-473d-9d52-5e6e6c1d7521)
+![S6-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/20502605-5297-437c-bf88-df56831d4298)
 
 ### Inserting data into the employed table:
 ## QUERY:
@@ -77,7 +77,7 @@ insert into employ5 values(5,'Niva','IT',90000);
 ### Update the salary of an employed:
 ## QUERY:
 ```
-UPDATE empl
+UPDATE employ5
 SET salary = 120000
 where empid=3;
 ```
