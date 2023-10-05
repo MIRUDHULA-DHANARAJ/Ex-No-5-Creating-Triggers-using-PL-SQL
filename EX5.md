@@ -81,9 +81,6 @@ UPDATE empl
 SET salary = 120000
 where empid=3;
 ```
-## OUTPUT:
-
-![S4-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/71806e95-5586-4a4c-8b24-78fdaf35743e)
 
 ## Display the employee table:
 ## QUERY:
@@ -92,7 +89,7 @@ select * from employ;
 ```
 ## OUTPUT:
 
-![image](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/caf36fc1-1dce-44b8-8d7a-463636255fa4)
+![S4-E5](https://github.com/MIRUDHULA-DHANARAJ/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/94828147/71806e95-5586-4a4c-8b24-78fdaf35743e)
 
 ## Display the salary_log table:
 ## QUERY:
