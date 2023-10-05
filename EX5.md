@@ -85,7 +85,7 @@ where empid=3;
 ## Display the employee table:
 ## QUERY:
 ```
-select * from employ;
+select * from employ5;
 ```
 ## OUTPUT:
 
